@@ -133,7 +133,7 @@ df_11['PatientID'] = 11
 
 df = pd.concat([df_0, df_1, df_2, df_3, df_4, df_5, df_6, df_7, df_8, df_9, df_10, df_11])
 
-extracted_features = extract_features(df, column_id='PatientID', column_sort='', impute_function=impute, default_fc_parameters=MinimalFCParameters())
+extracted_features = extract_features(df, column_id='PatientID', column_sort='', impute_function=impute) #, default_fc_parameters=MinimalFCParameters())
 print(extracted_features)
 
 #extracted_features.dropna(axis=1, inplace=True)
